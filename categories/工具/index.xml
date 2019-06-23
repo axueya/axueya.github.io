@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on 停云霭霭，时雨濛濛</title>
+    <link>https://axueya.github.io/categories/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on 停云霭霭，时雨濛濛</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 23 Jun 2019 11:12:40 +0800</lastBuildDate>
+    
+	<atom:link href="https://axueya.github.io/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo&#43;Github搭建Blog</title>
+      <link>https://axueya.github.io/post/hugo&#43;github%E6%90%AD%E5%BB%BAblog/</link>
+      <pubDate>Sun, 23 Jun 2019 11:12:40 +0800</pubDate>
+      
+      <guid>https://axueya.github.io/post/hugo&#43;github%E6%90%AD%E5%BB%BAblog/</guid>
+      <description>安装Hugo brew install Hugo 新建Hugo项目 hugo new site blog cd blog 选择主题 git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane cp -r themes/jane/exampleSite/content ./ cp themes/jane/exampleSite/config.toml ./ 添加新文章 hugo new posts/first-post.md 本地测试 hugo server 打开 http://localhos</description>
+    </item>
+    
+  </channel>
+</rss>

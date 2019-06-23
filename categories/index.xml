@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Jane - A super concise theme for Hugo</title>
+    <title>Categories on 停云霭霭，时雨濛濛</title>
     <link>https://axueya.github.io/categories/</link>
-    <description>Recent content in Categories on Jane - A super concise theme for Hugo</description>
+    <description>Recent content in Categories on 停云霭霭，时雨濛濛</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 21 Jun 2019 11:12:40 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jun 2019 11:12:40 +0800</lastBuildDate>
     
 	<atom:link href="https://axueya.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>工具</title>
+      <link>https://axueya.github.io/categories/%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sun, 23 Jun 2019 11:12:40 +0800</pubDate>
+      
+      <guid>https://axueya.github.io/categories/%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>category</title>
@@ -17,6 +26,15 @@
       <pubDate>Fri, 21 Jun 2019 11:12:40 +0800</pubDate>
       
       <guid>https://axueya.github.io/categories/category/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://axueya.github.io/categories/python/</link>
+      <pubDate>Fri, 21 Jun 2019 11:12:40 +0800</pubDate>
+      
+      <guid>https://axueya.github.io/categories/python/</guid>
       <description></description>
     </item>
     
@@ -30,9 +48,18 @@
     </item>
     
     <item>
+      <title>docs</title>
+      <link>https://axueya.github.io/categories/docs/</link>
+      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://axueya.github.io/categories/docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>index</title>
       <link>https://axueya.github.io/categories/index/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://axueya.github.io/categories/index/</guid>
       <description></description>
@@ -41,18 +68,9 @@
     <item>
       <title>shortcodes</title>
       <link>https://axueya.github.io/categories/shortcodes/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://axueya.github.io/categories/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docs</title>
-      <link>https://axueya.github.io/categories/docs/</link>
       <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://axueya.github.io/categories/docs/</guid>
+      <guid>https://axueya.github.io/categories/shortcodes/</guid>
       <description></description>
     </item>
     

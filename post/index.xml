@@ -1,34 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Jane - A super concise theme for Hugo</title>
+    <title>Posts on 停云霭霭，时雨濛濛</title>
     <link>https://axueya.github.io/post/</link>
-    <description>Recent content in Posts on Jane - A super concise theme for Hugo</description>
+    <description>Recent content in Posts on 停云霭霭，时雨濛濛</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 21 Jun 2019 11:12:40 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jun 2019 11:12:40 +0800</lastBuildDate>
     
 	<atom:link href="https://axueya.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Jane 主题预览</title>
-      <link>https://axueya.github.io/post/jane-theme-preview/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <title>Hugo&#43;Github搭建Blog</title>
+      <link>https://axueya.github.io/post/hugo&#43;github%E6%90%AD%E5%BB%BAblog/</link>
+      <pubDate>Sun, 23 Jun 2019 11:12:40 +0800</pubDate>
       
-      <guid>https://axueya.github.io/post/jane-theme-preview/</guid>
-      <description>主题预览,内容有待填充。</description>
-    </item>
-    
-    <item>
-      <title>Jane Theme Preview</title>
-      <link>https://axueya.github.io/post/jane-theme-preview/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://axueya.github.io/post/jane-theme-preview/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is created by &lt;a href=&#34;http://daringfireball.net/&#34;&gt;Daring Fireball&lt;/a&gt;, the original guideline is &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;here&lt;/a&gt;. Its syntax, however, varies between different parsers or editors.&lt;/p&gt;
-
-&lt;p&gt;Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.&lt;/p&gt;</description>
+      <guid>https://axueya.github.io/post/hugo&#43;github%E6%90%AD%E5%BB%BAblog/</guid>
+      <description>安装Hugo brew install Hugo 新建Hugo项目 hugo new site blog cd blog 选择主题 git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane cp -r themes/jane/exampleSite/content ./ cp themes/jane/exampleSite/config.toml ./ 添加新文章 hugo new posts/first-post.md 本地测试 hugo server 打开 http://localhos</description>
     </item>
     
     <item>
@@ -38,6 +27,43 @@
       
       <guid>https://axueya.github.io/post/my-first-post/</guid>
       <description>&lt;p&gt;hello&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>pandas apply传参</title>
+      <link>https://axueya.github.io/post/pandas-apply%E4%BC%A0%E5%8F%82/</link>
+      <pubDate>Fri, 21 Jun 2019 11:12:40 +0800</pubDate>
+      
+      <guid>https://axueya.github.io/post/pandas-apply%E4%BC%A0%E5%8F%82/</guid>
+      <description>&lt;p&gt;apply函数的*args和**kwds参数，&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
+import datetime   #用来计算日期差的包
+def dataInterval(data1,data2):
+    d1 = datetime.datetime.strptime(data1, &#39;%Y-%m-%d&#39;)
+    d2 = datetime.datetime.strptime(data2, &#39;%Y-%m-%d&#39;)
+    delta = d1 - d2
+    return delta.days
+def getInterval_new(arrLike,before,after):  #用来计算日期间隔天数的调用的函数
+    before = arrLike[before]
+    after = arrLike[after]
+#    print(PublishedTime.strip(),ReceivedTime.strip())
+    days = dataInterval(after.strip(),before.strip())  #注意去掉两端空白
+    return days
+
+if __name__ == &#39;__main__&#39;:    
+    fileName = &amp;quot;NS_new.xls&amp;quot;;
+    df = pd.read_excel(fileName) 
+    df[&#39;TimeInterval&#39;] = df.apply(getInterval_new , 
+      axis = 1, args = (&#39;ReceivedTime&#39;,&#39;PublishedTime&#39;))    #调用方式一
+    #下面的调用方式等价于上面的调用方式
+    df[&#39;TimeInterval&#39;] = df.apply(getInterval_new , 
+      axis = 1, **{&#39;before&#39;:&#39;ReceivedTime&#39;,&#39;after&#39;:&#39;PublishedTime&#39;})  #调用方式二
+    #下面的调用方式等价于上面的调用方式
+    df[&#39;TimeInterval&#39;] = df.apply(getInterval_new , 
+      axis = 1, before=&#39;ReceivedTime&#39;,after=&#39;PublishedTime&#39;)  #调用方式三
+
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -172,6 +198,24 @@ Follow the following steps:
   alert(&amp;quot;Hello, World!&amp;quot;)
 }
 &lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://axueya.github.io/post/untitled-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://axueya.github.io/post/untitled-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://axueya.github.io/post/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://axueya.github.io/post/untitled/</guid>
+      <description></description>
     </item>
     
   </channel>

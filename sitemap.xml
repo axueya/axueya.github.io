@@ -2,20 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://axueya.github.io/post/jane-theme-preview/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/post/jane-theme-preview/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://axueya.github.io/about/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -24,13 +10,44 @@
   
   <url>
     <loc>https://axueya.github.io/categories/</loc>
-    <lastmod>2019-06-21T11:12:40+08:00</lastmod>
+    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/post/hugo&#43;github%E6%90%AD%E5%BB%BAblog/</loc>
+    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/post/</loc>
+    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/tags/</loc>
+    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://axueya.github.io/</loc>
-    <lastmod>2019-06-21T11:12:40+08:00</lastmod>
+    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -42,19 +59,26 @@
   </url>
   
   <url>
-    <loc>https://axueya.github.io/post/</loc>
-    <lastmod>2019-06-21T11:12:40+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/tags/</loc>
-    <lastmod>2019-06-21T11:12:40+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://axueya.github.io/categories/category/</loc>
+    <lastmod>2019-06-21T11:12:40+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/tags/pandas/</loc>
+    <lastmod>2019-06-21T11:12:40+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/post/pandas-apply%E4%BC%A0%E5%8F%82/</loc>
+    <lastmod>2019-06-21T11:12:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/categories/python/</loc>
     <lastmod>2019-06-21T11:12:40+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -78,36 +102,6 @@
   </url>
   
   <url>
-    <loc>https://axueya.github.io/categories/index/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/tags/preview/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/categories/shortcodes/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/tags/shortcodes/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/tags/tag-6/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://axueya.github.io/post/shortcodes-preview/</loc>
     <lastmod>2018-03-05T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -116,7 +110,37 @@
   
   <url>
     <loc>https://axueya.github.io/categories/docs/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/categories/index/</loc>
+    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/tags/preview/</loc>
+    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/categories/shortcodes/</loc>
+    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/tags/shortcodes/</loc>
+    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/tags/tag-6/</loc>
+    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -313,6 +337,16 @@
   <url>
     <loc>https://axueya.github.io/tags/tag-5/</loc>
     <lastmod>2017-08-30T16:01:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/post/untitled-1/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/post/untitled/</loc>
     <priority>0</priority>
   </url>
   
