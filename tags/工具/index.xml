@@ -17,7 +17,7 @@
       <pubDate>Sun, 23 Jun 2019 11:12:40 +0800</pubDate>
       
       <guid>https://axueya.github.io/post/hugo&#43;github%E6%90%AD%E5%BB%BAblog/</guid>
-      <description>安装Hugo brew install Hugo 新建Hugo项目 hugo new site blog cd blog 选择主题 git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane cp -r themes/jane/exampleSite/content ./ cp themes/jane/exampleSite/config.toml ./ 添加新文章 hugo new posts/first-post.md 本地测试 hugo server 打开 http://localhos</description>
+      <description>安装Hugo 1 brew install Hugo 新建Hugo项目 1 2 hugo new site blog cd blog 选择主题 1 2 3 git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane cp -r themes/jane/exampleSite/content ./ cp themes/jane/exampleSite/config.toml ./ 添加新文章 1 hugo new posts/first-post.md 本地测试 1 hugo server 打开 http://</description>
     </item>
     
   </channel>

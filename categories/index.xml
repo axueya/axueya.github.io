@@ -21,101 +21,11 @@
     </item>
     
     <item>
-      <title>category</title>
-      <link>https://axueya.github.io/categories/category/</link>
-      <pubDate>Fri, 21 Jun 2019 11:12:40 +0800</pubDate>
-      
-      <guid>https://axueya.github.io/categories/category/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>python</title>
       <link>https://axueya.github.io/categories/python/</link>
       <pubDate>Fri, 21 Jun 2019 11:12:40 +0800</pubDate>
       
       <guid>https://axueya.github.io/categories/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>subcategory</title>
-      <link>https://axueya.github.io/categories/subcategory/</link>
-      <pubDate>Fri, 21 Jun 2019 11:12:40 +0800</pubDate>
-      
-      <guid>https://axueya.github.io/categories/subcategory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docs</title>
-      <link>https://axueya.github.io/categories/docs/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://axueya.github.io/categories/docs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>index</title>
-      <link>https://axueya.github.io/categories/index/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://axueya.github.io/categories/index/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>https://axueya.github.io/categories/shortcodes/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://axueya.github.io/categories/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>English</title>
-      <link>https://axueya.github.io/categories/english/</link>
-      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>https://axueya.github.io/categories/english/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>https://axueya.github.io/categories/test/</link>
-      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>https://axueya.github.io/categories/test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Development</title>
-      <link>https://axueya.github.io/categories/development/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://axueya.github.io/categories/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://axueya.github.io/categories/golang/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://axueya.github.io/categories/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Syntax Highlighting</title>
-      <link>https://axueya.github.io/categories/syntax-highlighting/</link>
-      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
-      
-      <guid>https://axueya.github.io/categories/syntax-highlighting/</guid>
       <description></description>
     </item>
     
