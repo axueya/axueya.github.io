@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>流畅的python笔记1-7章 - 停云霭霭，时雨濛濛</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="axue" />
+  <meta name="description" content="第一章 特殊方法 双下方法 namedtuple适合构建只有少数属性但是没有方法的对象，比如数据库条目。 len之所以不是普通方法，是为了让pyth" />
+
+  <meta name="keywords" content="Hugo, theme, jane" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.55.6" />
+
+
+<link rel="canonical" href="https://axueya.github.io/post/%E6%B5%81%E7%95%85%E7%9A%84python%E7%AC%94%E8%AE%B01-7%E7%AB%A0/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="流畅的python笔记1-7章" />
+<meta property="og:description" content="第一章 特殊方法 双下方法 namedtuple适合构建只有少数属性但是没有方法的对象，比如数据库条目。 len之所以不是普通方法，是为了让pyth" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://axueya.github.io/post/%E6%B5%81%E7%95%85%E7%9A%84python%E7%AC%94%E8%AE%B01-7%E7%AB%A0/" />
+<meta property="article:published_time" content="2019-06-27T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-06-27T00:00:00&#43;00:00"/>
+
+<meta itemprop="name" content="流畅的python笔记1-7章">
+<meta itemprop="description" content="第一章 特殊方法 双下方法 namedtuple适合构建只有少数属性但是没有方法的对象，比如数据库条目。 len之所以不是普通方法，是为了让pyth">
+
+
+<meta itemprop="datePublished" content="2019-06-27T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-06-27T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2009">
+
+
+
+<meta itemprop="keywords" content="pandas," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="流畅的python笔记1-7章"/>
+<meta name="twitter:description" content="第一章 特殊方法 双下方法 namedtuple适合构建只有少数属性但是没有方法的对象，比如数据库条目。 len之所以不是普通方法，是为了让pyth"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿雪的博客</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://axueya.github.io/">主页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://axueya.github.io/post/">归档</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://axueya.github.io/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://axueya.github.io/categories/">分类</a>
+          
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      阿雪的博客
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://axueya.github.io/">主页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://axueya.github.io/post/">归档</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://axueya.github.io/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://axueya.github.io/categories/">分类</a>
+          
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">流畅的python笔记1-7章</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-06-27" class="post-time">
+          2019-06-27
+        </time>
+        <div class="post-category">
+            <a href="https://axueya.github.io/categories/python/"> python </a>
+            
+          </div>
+        <span class="more-meta"> 约 2009 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#第一章">第一章</a></li>
+<li><a href="#第三章-字典和集合">第三章 字典和集合</a></li>
+<li><a href="#第四章-文本和字节序列">第四章 文本和字节序列</a></li>
+<li><a href="#第五章-一等函数">第五章 一等函数</a></li>
+<li><a href="#第六章-使用一等函数实现设计模式">第六章 使用一等函数实现设计模式</a></li>
+<li><a href="#第7章-函数装饰器与包">第7章 函数装饰器与包</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<h2 id="第一章">第一章</h2>
+
+<ol>
+<li><p>特殊方法 双下方法</p></li>
+
+<li><p>namedtuple适合构建只有少数属性但是没有方法的对象，比如数据库条目。</p></li>
+
+<li><p>len之所以不是普通方法，是为了让python自带的数据结构可以走后门。如果x是一个内置类型的实例，那么len(x)的速度会非常快，背后的原因是CPython会直接从一个C结构体里读取对象的长度，完全不会调用任何方法。</p></li>
+
+<li><p><code>__repr__</code>方便我们调试和记录日志。<code>__str__</code> 给终端用户看的。</p></li>
+
+<li><p>内置序列类型</p>
+
+<ul>
+<li>容器序列 list tuple collections.deque这些序列能存放不同类型的数据</li>
+<li>扁平序列 str bytes bytearray memoryview和array.array这类序列只能容纳一种类型
+
+<ul>
+<li>容器序列存放的是对象的引用，扁平序列里存放的是值而不是引用。扁平序列其实是一段连续的内存空间。</li>
+</ul></li>
+</ul></li>
+</ol>
+
+<p>按照能否被修改来分类</p>
+
+<ul>
+<li>可变序列 list, bytearray, array.array, collections, deque和memoryview</li>
+<li>不可变序列 tuple str 和bytes</li>
+</ul>
+
+<ol>
+<li><p>python2中列表推导会作用域泄漏</p></li>
+
+<li><p>列表推导的作用只有一个：生成列表。如果想生成其他类型的序列，可以用生成器表达式。生成器表达式遵守迭代器协议，可以逐个地产出元素，而不是先建立一个完整的列表，然后再把列表传递到某个构造函数中。用生成器表达式可以节省内存。</p></li>
+
+<li><p>列表推导用方括号，生成器表达式用圆括号。</p></li>
+</ol>
+
+<p>如果要计算两个各有1000个元素的列表的笛卡尔积，生成器表达式可以帮忙省掉运行for循环的开销，即一个含有100万个元素的列表。</p>
+
+<ol>
+<li>元组拆包。</li>
+</ol>
+
+<p>优雅交换中间变量</p>
+
+<p>b,a = a,b</p>
+
+<ol>
+<li>具名元组</li>
+</ol>
+
+<p><img src="https://axueya-1256523378.cos.ap-chengdu.myqcloud.com/20190627171911.png" alt="" /></p>
+
+<ol>
+<li>切片会忽略最后一个元素的原因</li>
+</ol>
+
+<p>为了可读性，可以给切片命名</p>
+
+<p><img src="https://axueya-1256523378.cos.ap-chengdu.myqcloud.com/20190627172003.png" alt="" /></p>
+
+<p>高维数组切片可以用&hellip;表示省略</p>
+
+<p>可以给切片赋值，但是要用可迭代对象，即使只有一个值，也要转成列表。</p>
+
+<ol>
+<li><code>+= *=</code></li>
+</ol>
+
+<p>在可变和不可变序列上</p>
+
+<p>+= 背后的方法是<strong>iadd</strong>，如果没有实现这个方法，会调用<strong>add</strong>,此时效果跟a=a+b一样。一般来说，可变序列都实现了<strong>iadd</strong></p>
+
+<p>对不可变序列进行重复拼接操作的话，效率会很低。str是个例外，cpython优化了它。</p>
+
+<ol>
+<li>list.sort() 就地排序，返回None，sorted()返回一个列表作为返回值</li>
+</ol>
+
+<p>两个方法都有参数reverse和key</p>
+
+<p>python的排序算法Timsort是稳定的。Timsort是一种自适应算法，会根据原序列的顺序特点来交替使用插入排序和归并排序，以达到最佳效率</p>
+
+<ol>
+<li>计时器</li>
+</ol>
+
+<p>from time import perf_ counter as pc ➍ &gt;&gt;&gt; t0 = pc(); floats /= 3; pc() - t0 ➎</p>
+
+<ol>
+<li>collections.deque</li>
+</ol>
+
+<p>线程安全，可以快速从两端添加或删除</p>
+
+<p>适用于存放最近用到的几个元素，可以指定maxlen</p>
+
+<p>append 添加到右侧</p>
+
+<p>appendleft 添加到左侧</p>
+
+<p>extend 添加可迭代对象到右侧</p>
+
+<p>extendleft 到左侧</p>
+
+<p>pop 移除最后一个元素并返回它的值</p>
+
+<p>popleft 移除第一个元素并返回它的值</p>
+
+<ol>
+<li>同步类（线程安全类）</li>
+</ol>
+
+<p>Queue LifoQueue PriorityQueue</p>
+
+<p>multiprocessing</p>
+
+<ol>
+<li>容器：有些对象中包含对其他对象的引用，这种对象称为容器</li>
+</ol>
+
+<h2 id="第三章-字典和集合">第三章 字典和集合</h2>
+
+<ol>
+<li>python对字典做了高度优化，散列表是字典性能出众的根本原因</li>
+</ol>
+
+<p>python用开放定址法的二次探查法处理冲突</p>
+
+<ol>
+<li>字典的键必须是可散列的</li>
+</ol>
+
+<p><img src="https://axueya-1256523378.cos.ap-chengdu.myqcloud.com/20190627172218.png" alt="" /></p>
+
+<p>原子不可变数据类型（str,bytes和数值类型）都是可散列的</p>
+
+<p>frozenset也是可散列的</p>
+
+<p>元组：只有当元组包含的所有元素都是可散列的才可以</p>
+
+<ol>
+<li>字典推导</li>
+</ol>
+
+<p><img src="https://axueya-1256523378.cos.ap-chengdu.myqcloud.com/20190627172257.png" alt="" /></p>
+
+<ol>
+<li>defaultdict</li>
+</ol>
+
+<p><img src="https://axueya-1256523378.cos.ap-chengdu.myqcloud.com/20190627172326.png" alt="" /></p>
+
+<p>collections.defaultdict(list)</p>
+
+<p>list是default_factory</p>
+
+<ol>
+<li>keys()</li>
+</ol>
+
+<p>dict.keys()在python3中返回值是一个视图，视图就像一个集合，在视图中查找一个元素的速度很快。py2返回值是个列表，不会很快。</p>
+
+<ol>
+<li>Counter</li>
+</ol>
+
+<p><img src="https://axueya-1256523378.cos.ap-chengdu.myqcloud.com/20190627172412.png" alt="" /></p>
+
+<ol>
+<li>set</li>
+</ol>
+
+<p><img src="https://axueya-1256523378.cos.ap-chengdu.myqcloud.com/20190627172504.png" alt="" /></p>
+
+<ol>
+<li>散列表</li>
+</ol>
+
+<p>加盐</p>
+
+<p><img src="https://axueya-1256523378.cos.ap-chengdu.myqcloud.com/20190627172544.png" alt="" /></p>
+
+<p><img src="https://axueya-1256523378.cos.ap-chengdu.myqcloud.com/20190627172627.png" alt="" /></p>
+
+<p><img src="https://axueya-1256523378.cos.ap-chengdu.myqcloud.com/20190627172729.png" alt="" /></p>
+
+<p><strong>优化是维护的对立面</strong></p>
+
+<p>往字典中添加新键可能会改变已有键的顺序（字典扩容）</p>
+
+<p><strong>不要同时迭代和修改字典</strong></p>
+
+<h2 id="第四章-文本和字节序列">第四章 文本和字节序列</h2>
+
+<ol>
+<li>编码和解码</li>
+</ol>
+
+<p>&gt; Python3引入两个新类型</p>
+
+<p>- bytes</p>
+
+<p>不可变字节类型</p>
+
+<p>- byrearray</p>
+
+<p>字节数组</p>
+
+<p>可变</p>
+
+<p>&gt; 字符串与bytes</p>
+
+<p>- 字符串是由字符组成的有序序列，字符可以使用编码来理解</p>
+
+<p>- bytes是字节组成的有序的不可变序列</p>
+
+<p>- bytearray是字节组成的有序的可变序列</p>
+
+<p>&gt; 编码与解码</p>
+
+<p>- 字符串按照不同的字符集编码encode返回字节序列bytes</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">encode(encoding=&#34;utf-8&#34;,errors=&#34;strict&#34;) -&gt; bytes </pre></td></tr></table>
+</div>
+</div>
+<p>- 字节序列按照不同的字符集解码decode返回字符串</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">bytes.decode(encoding=&#34;utf-8&#34;,errors=&#34;strict&#34;) -&gt; str </pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">bytearray.decode(encoding=&#34;utf-8&#34;.errors=&#34;strict&#34;) -&gt; str </pre></td></tr></table>
+</div>
+</div>
+<p><img src="http://ww1.sinaimg.cn/large/006tNc79ly1g4fuhtaf9mj30tm06cq4g.jpg" alt="" /></p>
+
+<p><img src="http://ww1.sinaimg.cn/large/006tNc79ly1g4fuinjdnrj30t40f0ac8.jpg" alt="" /></p>
+
+<ol>
+<li>py3如何存储字符串</li>
+</ol>
+
+<p><img src="http://ww3.sinaimg.cn/large/006tNc79ly1g4fuiz4jr7j30te086mzs.jpg" alt="" /></p>
+
+<h2 id="第五章-一等函数">第五章 一等函数</h2>
+
+<ol>
+<li><p>高阶函数：接收函数作为参数，或是返回函数 的函数，如map,sorted,filter, reduce</p></li>
+
+<li><p>列表推导替代map,filter</p></li>
+
+<li><p>reduce也不再是内置的规约函数，内置的有sum, all, any</p></li>
+
+<li><p>lambda表达式 创建匿名函数</p></li>
+
+<li><p>可调用对象</p></li>
+</ol>
+
+<p><img src="http://ww4.sinaimg.cn/large/006tNc79ly1g4fujmhp08j30u009uwgl.jpg" alt="" /></p>
+
+<ol>
+<li><p>使用callable看能不能调用，dir看有哪些属性</p></li>
+
+<li><p>用*指定仅限关键词参数</p></li>
+</ol>
+
+<p><img src="http://ww2.sinaimg.cn/large/006tNc79ly1g4fukmqkjej30to0ciwgb.jpg" alt="" /></p>
+
+<p><img src="http://ww4.sinaimg.cn/large/006tNc79ly1g4fulcwntkj30uy06u402.jpg" alt="" /></p>
+
+<ol>
+<li>注解</li>
+</ol>
+
+<p>python只把注解存储在<strong>annotations</strong>中，不做其他处理</p>
+
+<p>inspect可以提取到</p>
+
+<ol>
+<li>fuctools.partial</li>
+</ol>
+
+<p>固定部分参数</p>
+
+<h2 id="第六章-使用一等函数实现设计模式">第六章 使用一等函数实现设计模式</h2>
+
+<ol>
+<li><p>策略模式：定义一系列算法，把它们一一封装起来，并且使它们可以相互替换。使算法可以独立于使用它的客户而变化</p></li>
+
+<li><p>命令模式：目的是解耦调用操作的对象和提供实现的对象。</p></li>
+</ol>
+
+<p><img src="http://ww3.sinaimg.cn/large/006tNc79ly1g4fumzcfj3j30sc0z0agm.jpg" alt="" /></p>
+
+<h2 id="第7章-函数装饰器与包">第7章 函数装饰器与包</h2>
+
+<ol>
+<li>装饰器</li>
+</ol>
+
+<p>python中，装饰器返回的内部函数相当于装饰器实例，返回的函数包装了被装饰的函数。</p>
+
+<p>python内置的用于装饰方法的函数:property、classmethod、staticmethod</p>
+
+<p>lru_cache装饰方法适用于递归</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">axue</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2019-06-27</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://axueya.github.io/tags/pandas/">pandas</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/hugo&#43;github%E6%90%AD%E5%BB%BAblog/">
+            <span class="next-text nav-default">Hugo&#43;Github搭建Blog</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+
+
+<a href="https://axueya.github.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    2019
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        axue
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
