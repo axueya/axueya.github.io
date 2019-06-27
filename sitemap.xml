@@ -3,8 +3,45 @@
   
   <url>
     <loc>https://axueya.github.io/categories/</loc>
-    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/post/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/tags/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/tags/pandas/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/categories/python/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/post/%E6%B5%81%E7%95%85%E7%9A%84python%E7%AC%94%E8%AE%B01-7%E7%AB%A0/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -12,24 +49,6 @@
     <lastmod>2019-06-23T11:12:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/post/</loc>
-    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/tags/</loc>
-    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/</loc>
-    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -45,22 +64,10 @@
   </url>
   
   <url>
-    <loc>https://axueya.github.io/tags/pandas/</loc>
-    <lastmod>2019-06-21T11:12:40+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://axueya.github.io/post/pandas-apply%E4%BC%A0%E5%8F%82/</loc>
     <lastmod>2019-06-21T11:12:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/categories/python/</loc>
-    <lastmod>2019-06-21T11:12:40+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

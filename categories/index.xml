@@ -6,10 +6,19 @@
     <description>Recent content in Categories on 停云霭霭，时雨濛濛</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Jun 2019 11:12:40 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://axueya.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>python</title>
+      <link>https://axueya.github.io/categories/python/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://axueya.github.io/categories/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>工具</title>
@@ -17,15 +26,6 @@
       <pubDate>Sun, 23 Jun 2019 11:12:40 +0800</pubDate>
       
       <guid>https://axueya.github.io/categories/%E5%B7%A5%E5%85%B7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://axueya.github.io/categories/python/</link>
-      <pubDate>Fri, 21 Jun 2019 11:12:40 +0800</pubDate>
-      
-      <guid>https://axueya.github.io/categories/python/</guid>
       <description></description>
     </item>
     

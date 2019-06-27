@@ -6,10 +6,19 @@
     <description>Recent content in pandas on 停云霭霭，时雨濛濛</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 21 Jun 2019 11:12:40 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://axueya.github.io/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>流畅的python笔记1-7章</title>
+      <link>https://axueya.github.io/post/%E6%B5%81%E7%95%85%E7%9A%84python%E7%AC%94%E8%AE%B01-7%E7%AB%A0/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://axueya.github.io/post/%E6%B5%81%E7%95%85%E7%9A%84python%E7%AC%94%E8%AE%B01-7%E7%AB%A0/</guid>
+      <description>第一章 特殊方法 双下方法 namedtuple适合构建只有少数属性但是没有方法的对象，比如数据库条目。 len之所以不是普通方法，是为了让pyth</description>
+    </item>
     
     <item>
       <title>pandas apply传参</title>
