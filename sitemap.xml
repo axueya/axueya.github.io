@@ -20,6 +20,13 @@
   </url>
   
   <url>
+    <loc>https://axueya.github.io/post/mac%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://axueya.github.io/tags/pandas/</loc>
     <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -38,6 +45,18 @@
   </url>
   
   <url>
+    <loc>https://axueya.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://axueya.github.io/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2019-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://axueya.github.io/post/%E6%B5%81%E7%95%85%E7%9A%84python%E7%AC%94%E8%AE%B01-7%E7%AB%A0/</loc>
     <lastmod>2019-06-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -49,18 +68,6 @@
     <lastmod>2019-06-23T11:12:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://axueya.github.io/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2019-06-23T11:12:40+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

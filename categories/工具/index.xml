@@ -6,10 +6,19 @@
     <description>Recent content in 工具 on 停云霭霭，时雨濛濛</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Jun 2019 11:12:40 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://axueya.github.io/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mac常用软件</title>
+      <link>https://axueya.github.io/post/mac%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://axueya.github.io/post/mac%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</guid>
+      <description>必备工具 alfred popclip Bettertouchtool xnip 好用的截屏软件 moom 分屏软件 paste 剪贴板扩展 开发工具 JetBrains全家桶 sublime text navicat premium postman xmind zen 思维导图 Docker Desktop 娱乐工具 IINA 视频播放器 markd</description>
+    </item>
     
     <item>
       <title>Hugo&#43;Github搭建Blog</title>
